@@ -35,46 +35,89 @@ html, body {
     font-size: 20px;
 }
 
+@font-face {
+    font-family: "Monserat";
+    src: url("./assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+
 .wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Monserat';
+    font-weight: 400;
+}
 
+.header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #0c0602d0;
+    /* background-color: #1f0f05; */
+    font-size: 11px;
+    line-height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-list li {
+    min-width: 165px;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 0px 10px;
+    text-transform: uppercase;  
+    transition: 0.2s; 
+}
+
+.nav-link:hover {
+    font-size: 14px;
 }
 
 .fullscreen {
     min-height: 100vh;
-    /* background-color: #666; */
-    /* background-color: #1f1107; */
-    background-color: #0c0602;
     display: flex;
+    background-color: #0c0602;    
+    /* padding: 10px 0; */
+}
+
+.fullscreen2 {
+    min-height: 80vh;
+    display: flex;
+    /* background-color: #1f0f05;   */
+    background-color: #0c0602;
     padding: 10px 0;
 }
 
-.f-two {
+/* .non-fullscreen {
+    display: flex;
+    min-height: 100vh;
     background-color: #0c0602;
-}
-
-.f-bg {
-    background: url('./assets/images/merve-aydin-jD2dIC2IZME-unsplash.jpg') center / cover no-repeat fixed;
-}
-
-.f-bg2 {
-    background: url('./assets/images/pexels-jéshoots-271458.jpg') center / cover no-repeat fixed;
-}
+    display: flex;
+} */
 
 .f-body {
-    /* border: 1px solid #fff; */
-    background: url('./assets/images/pushpak-dsilva-r-hQw_obFd0-unsplash.jpg') center / cover;    
     flex: 1 1 auto;
     width: 100%;
     max-width: 1440px;    
-    margin: 0 auto;
-    text-align: center;
+    /* margin: 0 auto; */
+    margin: 40px auto 0px;
+    text-align: center;    
+    padding: 0 20px;
+}
+
+.f-body-main {
+    background: url('./assets/images/chockolate.jpg') center / cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
 }
 
 .body-content {
@@ -84,7 +127,7 @@ html, body {
     width: 300px;
     height: 300px;
     padding: 20px;
-    background-color: #301c0e86;
+    background-color: #c4a69186;
     align-self: center;
     border-radius: 300px;
 }
@@ -100,14 +143,179 @@ html, body {
 
 .f-link {
     display: inline-block;
-    /* line-height: 50px; */
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 2px;
-    background-color: #301c0efd;
     align-self: center;
     padding: 0 20px;
 }
+
+.f-bg {
+    background: url('./assets/images/truffle.jpg') center / cover no-repeat fixed;
+}
+
+.f-bg2 {
+    background: url('./assets/images/hand.jpg') center / cover no-repeat fixed;
+}
+
+.catalog {
+    background-color: #0c0602;  
+    min-height: 100vh;  
+}
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;    
+    margin: 40px auto 30px;
+    text-align: center;    
+    padding: 0 20px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.catalog-buttons {
+    margin-top: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.catalog-btn {
+    font-family: 'Monserat';
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+    cursor: pointer; 
+    transition: 0.5s;
+    letter-spacing: 1px;   
+}
+
+.catalog-btn:hover {
+    background-color: rgb(235, 219, 200);
+}
+
+.btn-active {
+    width: 160px;
+    height: 50px;
+}
+
+.one-product-container-chocolate,
+.one-product-container-marshmallow,
+.one-product-container-marmalade {
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+
+.active-product {
+    display: flex;
+}
+
+.one-product {
+    max-width: 350px;
+    text-align: center;
+}
+
+.product-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-name {
+    margin-top: 10px;
+    padding: 0px 30px;
+    font-size: 18px;
+    color: rgb(235, 219, 200);
+}
+
+.product-description {
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+.product-price {
+    margin-top: 15px;
+    color: rgb(235, 219, 200)
+}
+
+/* .f-cat {
+    background-color: #0c0602;
+}
+
+.f-body-catalog {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+}
+
+.catalog-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.catalog-buttons {
+    margin-top: 30px;
+}
+
+.catalog-btn {
+    font-family: 'Monserat';
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+    cursor: pointer; 
+    transition: 0.5s;
+    letter-spacing: 1px;   
+}
+
+.catalog-btn:hover {
+    background-color: rgb(235, 219, 200);
+}
+
+.btn-active {
+    width: 160px;
+    height: 50px;
+}
+
+.one-product-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.one-product {
+    width: 300px;
+    height: 300px;
+}
+
+.product-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+} */
 
 .contacts {
 }

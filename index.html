@@ -5,32 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Особый случай</title>
 </head>
 <body>
    <div class="wrapper">
-        <section class="fullscreen">            
-            <div class="f-body">                
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#catalog" class="nav-link">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Заказать звонок</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Частые вопросы</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="fullscreen">                         
+            <div class="f-body f-body-main">                               
                 <div class="body-content">
                     <h1 class="f-title">Заголовок</h1>
                     <div class="f-text">Текст / слоган / логотип</div>
-                    <a href="" class="f-link">Кнопка "Сделать заказ"</a>
+                    <a href="" class="f-link">Кнопка</a>
                 </div>
             </div>
         </section>
-        <section class="fullscreen f-bg">            
+        <section class="fullscreen2 f-bg">            
         </section>
-        <section class="fullscreen f-two">
-            <div class="f-body">
-                <h2 class="f-title">Заголовок</h2>
-                <div class="f-text">Тут про шоколад</div>
-                <a href="" class="f-link"></a>
-            </div>
+        <section class="catalog" id="catalog">
+            <div class="catalog-container">
+                <h2 class="title">Каталог продукции</h2>
+                <div class="catalog-buttons">
+                    <button class="catalog-btn btn-active" data-product="chocolate">Шоколад</button>
+                    <button class="catalog-btn"data-product="marshmallow">Зефир</button>
+                    <button class="catalog-btn" data-product="marmalade">Мармелад</button>
+                </div>
+                <div class="one-product-container-chocolate active-product">
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/1.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/2.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/3.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/4.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/5.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/chocolate/6.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                </div>
+                <div class="one-product-container-marshmallow">
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/7.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/8.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/9.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/4.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/5.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marshmallow/6.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                </div>
+                <div class="one-product-container-marmalade">
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/1.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/2.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/3.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/4.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/5.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                    <div class="one-product">
+                        <img src="./assets/products/marmalade/6.jpg" alt="" class="product-img">
+                        <p class="product-name">Название</p>
+                        <p class="product-description">Краткое описание изделия, на пару слов, Краткое описание изделия, на пару слов Краткое описание изделия, на пару слов</p>
+                        <p class="product-price">12.34 руб.</p>
+                    </div>
+                </div>
+        </section> 
+        <section class="fullscreen2 f-bg2">            
         </section>
-        <section class="fullscreen f-bg">            
-        </section>
-        <section class="fullscreen f-two">
-            <div class="f-body">
+        <!-- <section class="fullscreen f-two">
+            <div class="f-body f-body-catalog">
                 <h2 class="f-title">Заголовок</h2>
                 <div class="f-text">Тут про зефир</div>
                 <a href="" class="f-link"></a>
@@ -44,7 +181,7 @@
                 <div class="f-text">Тут про мармелад</div>
                 <a href="" class="f-link"></a>
             </div>
-        </section>
+        </section> -->
         <div class="contacts">
             <div class="c-body">
                 <p>
@@ -60,5 +197,6 @@
             </div>
         </footer>
    </div> 
+   <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
