@@ -1,0 +1,140 @@
+/* Обнуление */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    /* background-color: #333; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fullscreen {
+    min-height: 100vh;
+    /* background-color: #666; */
+    /* background-color: #1f1107; */
+    background-color: #0c0602;
+    display: flex;
+    padding: 10px 0;
+}
+
+.f-two {
+    background-color: #0c0602;
+}
+
+.f-bg {
+    background: url('./assets/images/merve-aydin-jD2dIC2IZME-unsplash.jpg') center / cover no-repeat fixed;
+}
+
+.f-bg2 {
+    background: url('./assets/images/pexels-jéshoots-271458.jpg') center / cover no-repeat fixed;
+}
+
+.f-body {
+    /* border: 1px solid #fff; */
+    background: url('./assets/images/pushpak-dsilva-r-hQw_obFd0-unsplash.jpg') center / cover;    
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1440px;    
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: #301c0e86;
+    align-self: center;
+    border-radius: 300px;
+}
+
+.f-title {
+    font-size: 25px;  
+}
+
+.f-text {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;     
+}
+
+.f-link {
+    display: inline-block;
+    /* line-height: 50px; */
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: #301c0efd;
+    align-self: center;
+    padding: 0 20px;
+}
+
+.contacts {
+}
+
+.c-body {
+    max-width: 1440px;    
+    margin: 0px auto;
+    padding: 30px 20px;
+    background-color: #301c0efd;
+}
+
+.c-body p {
+    margin: 0px 0px 20px 0px; 
+}
+
+.c-body p:last-child {
+    margin: 0;
+}
+
+.footer {
+    background-color: #111;
+    text-align: center;
+
+}
+
+.footer-body {
+    max-width: 1440px;    
+    margin: 0px auto;
+    padding: 30px 20px;
+}
