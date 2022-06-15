@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
     height: 100%;
-    /* background-color: #333; */
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 20px;
@@ -52,17 +51,17 @@ html, body {
 .header {
     position: fixed;
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     background-color: #0c0602d0;
-    /* background-color: #1f0f05; */
     font-size: 11px;
-    line-height: 40px;
+    line-height: 38px;
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
 }
 
 .nav-list li {
@@ -143,6 +142,10 @@ html, body {
     background: url('./assets/images/chockolate2.jpg') center / cover no-repeat fixed;
 }
 
+.f-bg4 {
+    background: url('./assets/images/marshmallow2.jpg') center / cover no-repeat fixed;
+}
+
 .catalog {
     background-color: #0c0602;  
     min-height: 100vh;  
@@ -169,6 +172,7 @@ html, body {
     margin-top: 30px;
     height: 60px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 3px;
@@ -217,7 +221,8 @@ html, body {
     margin: 20px 0px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 25px rgb(90, 88, 88);
+    background-color: #383533d0;
+    box-shadow: 0 0 15px rgb(90, 88, 88);
 }
 
 .product-img {
@@ -225,6 +230,7 @@ html, body {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .product-name {
@@ -254,7 +260,7 @@ html, body {
 /* _____________FORM */
 
 .f-body-form {
-    /* background: url('./assets/images/chockolate.jpg') center / cover;  */
+    background: url('./assets/images/call.jpg') center / cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,10 +271,11 @@ html, body {
 }
 
 .form {
-    width: 600px;
+    max-width: 600px;
     padding: 25px;
     margin: 30px auto 0;
     border-radius: 10px;
+    background-color: #c4a691c9;
 }
 
 .form-body {
@@ -295,15 +302,18 @@ html, body {
 
 .form-title {
     font-size: 25px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: rgb(165, 148, 129);
+    color: #0c0602d0;
     font-weight: 700;
 }
 
 .form-title2 {
     font-size: 20px;
     margin-bottom: 30px;
+    color: #0c0602d0;
+    font-weight: 700;
 }
 
 .form-item {
@@ -314,7 +324,7 @@ html, body {
     display: block;
     margin-bottom: 10px;
     letter-spacing: 2px;
-    color: rgb(165, 148, 129);
+    color: rgb(56, 51, 45);
     font-weight: 700;
 }
 .form-input {
