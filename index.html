@@ -16,10 +16,10 @@
                         <a href="#catalog" class="nav-link">Каталог</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Доставка</a>
+                        <a href="#delivery" class="nav-link">Доставка</a>
                     </li>
                     <li>
-                        <a href="" class="nav-link">Заказать звонок</a>
+                        <a href="#call" class="nav-link">Заказать звонок</a>
                     </li>
                     <li>
                         <a href="" class="nav-link">Частые вопросы</a>
@@ -32,11 +32,8 @@
         </header>
         <section class="fullscreen">                         
             <div class="f-body f-body-main">                               
-                <div class="body-content">
-                    <h1 class="f-title">Заголовок</h1>
-                    <div class="f-text">Текст / слоган / логотип</div>
-                    <a href="" class="f-link">Кнопка</a>
-                </div>
+                <div class="body-content"></div>
+                <div class="f-text">Какой-то слоган (Собственное производство изделий из шоколада...)</div>
             </div>
         </section>
         <section class="fullscreen2 f-bg">            
@@ -166,22 +163,37 @@
         </section> 
         <section class="fullscreen2 f-bg2">            
         </section>
-        <!-- <section class="fullscreen f-two">
-            <div class="f-body f-body-catalog">
-                <h2 class="f-title">Заголовок</h2>
-                <div class="f-text">Тут про зефир</div>
-                <a href="" class="f-link"></a>
-            </div>
-        </section>
-        <section class="fullscreen f-bg">            
-        </section>
-        <section class="fullscreen f-two">
+        <section class="fullscreen" id="delivery">
             <div class="f-body">
-                <h2 class="f-title">Заголовок</h2>
-                <div class="f-text">Тут про мармелад</div>
-                <a href="" class="f-link"></a>
+                <h2 class="title">Доставка</h2>
+                <div>Блок с информацией о доставке</div>                
             </div>
-        </section> -->
+        </section>
+        <section class="fullscreen2 f-bg3">            
+        </section>
+        <section class="fullscreen" id="call">
+            <div class="f-body f-body-form">
+                <div class="form">
+                    <form action="#" class="form-body" id="form">                    
+                        <p class="form-title">Появились вопросы?</p>
+                        <p class="form-title2">Оставьте свои контактные данные ниже и мы обязательно с Вами свяжемся!</p>
+                        <div class="form-item">
+                            <label for="formName" class="form-label">Имя*</label>
+                            <input type="text" id="formName" class="form-input _req" name="name">
+                        </div>
+                        <div class="form-item">
+                            <label for="formTel" class="form-label">Телефон*</label>
+                            <input type="tel" id="formTel" class="form-input _req _tel" name="tel">
+                        </div>
+                        <div class="form-item">
+                            <label for="formMessage" class="form-label">Сообщение</label>
+                            <textarea name="message" id="formMessage" class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         <div class="contacts">
             <div class="c-body">
                 <p>
@@ -198,5 +210,6 @@
         </footer>
    </div> 
    <script type="module" src="./assets/js/index.js"></script>
+   <script type="module" src="./assets/js/form.js"></script>
 </body>
 </html>
