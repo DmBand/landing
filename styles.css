@@ -185,7 +185,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 5px;
+    column-gap: 1px;
+    align-self: center;
 }
 
 .catalog-btn {
@@ -226,25 +227,34 @@ html, body {
 }
 
 .one-product {
-    max-width: 350px;
+    /* display: flex;
+    flex-direction: column; */
+    width: 350px;
     text-align: center;
 }
 
 .product-img {
+    border-radius: 30px;
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
 .product-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    min-height: 70px;
     padding: 0px 30px;
     font-size: 18px;
-    color: rgb(235, 219, 200);
+    font-weight: 700;
+    color: rgb(250, 230, 207);
 }
 
 .product-description {
     margin-top: 10px;
+    min-height: 55px;
     padding: 0px 10px;
     font-size: 14px;
 }
@@ -253,69 +263,6 @@ html, body {
     margin-top: 15px;
     color: rgb(235, 219, 200)
 }
-
-/* .f-cat {
-    background-color: #0c0602;
-}
-
-.f-body-catalog {
-    display: flex;
-    margin-top: 60px;
-    flex-direction: column;
-}
-
-.catalog-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.title {
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 2px;
-}
-
-.catalog-buttons {
-    margin-top: 30px;
-}
-
-.catalog-btn {
-    font-family: 'Monserat';
-    font-weight: 700;
-    text-transform: uppercase;
-    width: 130px;
-    height: 40px;
-    cursor: pointer; 
-    transition: 0.5s;
-    letter-spacing: 1px;   
-}
-
-.catalog-btn:hover {
-    background-color: rgb(235, 219, 200);
-}
-
-.btn-active {
-    width: 160px;
-    height: 50px;
-}
-
-.one-product-container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.one-product {
-    width: 300px;
-    height: 300px;
-}
-
-.product-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-} */
 
 .contacts {
 }
