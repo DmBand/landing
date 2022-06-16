@@ -50,6 +50,7 @@ html, body {
 
 .header {
     position: fixed;
+    z-index: 10;
     width: 100%;
     min-height: 40px;
     /* background-color: #0c0602d0; */
@@ -166,7 +167,7 @@ html, body {
 
 .title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 2px;
     color: #2e2c2a;
 }
@@ -265,8 +266,61 @@ html, body {
 
 /* _______DELIVERY____*/
 
+/* .title-wrapper {
+    background-color: #c4a6918a;
+    align-self: center;
+} */
+
+.delivery {
+    background: url('./assets/images/delivery.jpg') center / cover no-repeat;
+    background-color: #c5e7cf; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;    
+    text-align: center;    
+    padding: 50px 20px;
+
+}
+
 .delivery-container {
-    
+    color: #000;
+    margin-top: 30px;    
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.one-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /* min-height: 150px; */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: burlywood;
+    cursor: pointer;
+    /* box-shadow: 0 0 15px burlywood; */
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.delivery-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.delivery-text {
+    font-size: 16px;
 }
 
 /* ____END_DELIVERY___*/
