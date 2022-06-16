@@ -52,7 +52,8 @@ html, body {
     position: fixed;
     width: 100%;
     min-height: 40px;
-    background-color: #0c0602d0;
+    /* background-color: #0c0602d0; */
+    background-color: #f0fde6;
     font-size: 11px;
     line-height: 38px;
 }
@@ -70,7 +71,8 @@ html, body {
 }
 
 .nav-link {
-    color: #fff;
+    color: #000;
+    font-weight: 700;
     padding: 0px 10px;
     text-transform: uppercase;  
     transition: 0.2s; 
@@ -83,13 +85,14 @@ html, body {
 .fullscreen {
     min-height: 100vh;
     display: flex;
-    background-color: #0c0602;    
+    /* background-color: #0c0602;     */
+    background-color: #f0fde6;
 }
 
 .fullscreen2 {
     min-height: 80vh;
     display: flex;
-    background-color: #0c0602;
+    background-color: #f0fde6;
     padding: 10px 0;
 }
 
@@ -113,12 +116,12 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     padding: 20px;    
     background: url('./assets/images/logo.jpg') center / cover no-repeat;
     align-self: center;
-    border-radius: 300px;
+    border-radius: 450px;
 }
 
 .f-text {
@@ -147,7 +150,7 @@ html, body {
 }
 
 .catalog {
-    background-color: #0c0602;  
+    background-color: #f0fde6; 
     min-height: 100vh;  
 }
 
@@ -163,9 +166,9 @@ html, body {
 
 .title {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 2px;
-    color: rgb(165, 148, 129);
+    color: #2e2c2a;
 }
 
 .catalog-buttons {
@@ -187,11 +190,13 @@ html, body {
     height: 40px;
     cursor: pointer; 
     transition: 0.5s;
-    letter-spacing: 1px;   
+    letter-spacing: 1px; 
+    background-color: burlywood;
+    color: #2e2c2a;
 }
 
 .catalog-btn:hover {
-    background-color: rgb(235, 219, 200);
+    background-color: #f1cd9e;
 }
 
 .btn-active {
@@ -221,8 +226,8 @@ html, body {
     margin: 20px 0px;
     text-align: center;
     border-radius: 10px;
-    background-color: #383533d0;
-    box-shadow: 0 0 15px rgb(90, 88, 88);
+    background-color: #c5e7cf;
+    /* box-shadow: 0 0 15px #5a5858; */
 }
 
 .product-img {
@@ -242,7 +247,7 @@ html, body {
     padding: 0px 30px;
     font-size: 18px;
     font-weight: 700;
-    color: rgb(165, 148, 129);
+    color: #2e2c2a;
 }
 
 .product-description {
@@ -250,12 +255,21 @@ html, body {
     min-height: 55px;
     padding: 0px 10px;
     font-size: 14px;
+    color: #504d4d;
 }
 
 .product-price {
     margin: 15px 0;
-    color: rgb(165, 148, 129);
+    color: #2e2c2a;
 }
+
+/* _______DELIVERY____*/
+
+.delivery-container {
+    
+}
+
+/* ____END_DELIVERY___*/
 
 /* _____________FORM */
 
