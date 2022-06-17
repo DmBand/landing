@@ -266,14 +266,19 @@ html, body {
 
 /* _______DELIVERY____*/
 
-/* .title-wrapper {
-    background-color: #c4a6918a;
+.title-wrapper {
+    margin-bottom: 30px;
+    color: #38332d;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    /* background-color: #ffffffb2; */
     align-self: center;
-} */
+}
 
 .delivery {
-    background: url('./assets/images/delivery.jpg') center / cover no-repeat;
-    background-color: #c5e7cf; 
+    background: url('./assets/images/delivery2.jpg') center / cover no-repeat;
+    /* background-color: #c5e7cf;  */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -284,24 +289,28 @@ html, body {
 }
 
 .delivery-container {
+    margin: auto auto;
+    border-radius: 10px;
+    padding: 25px;
+    /* background-color: #c4a691c9; */
+    background-color: #c5e7cfb7;
+    max-width: 70%;
     color: #000;
-    margin-top: 30px;    
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .one-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    /* min-height: 150px; */
+    width: 55%;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: burlywood;
+    background-color: #87de9a;
     cursor: pointer;
-    /* box-shadow: 0 0 15px burlywood; */
 }
 
 .left {
@@ -319,8 +328,42 @@ html, body {
     margin-bottom: 10px;
 }
 
+.home,
+.mail,
+.car {
+    position: relative;
+}
+
+.home::after,
+.mail::after,
+.car::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    top: -11px;
+}
+
+.home::after {
+    background: url('./assets/images/svg/home.svg');
+}
+
+.mail::after {
+    background: url('./assets/images/svg/mail.svg');
+}
+
+.car::after {
+    background: url('./assets/images/svg/car.svg');
+}
+
 .delivery-text {
     font-size: 16px;
+}
+
+.delivery-span {
+    font-weight: 700; 
+    color: #464645;
 }
 
 /* ____END_DELIVERY___*/
@@ -392,7 +435,7 @@ html, body {
     display: block;
     margin-bottom: 10px;
     letter-spacing: 2px;
-    color: rgb(56, 51, 45);
+    color: #38332d;
     font-weight: 700;
 }
 .form-input {
