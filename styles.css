@@ -168,7 +168,7 @@ html, body {
     height: 48px;    
     transition: all 5s 4s; 
     animation-name: link;
-    animation-duration: 0.25s;
+    animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;    
     animation-direction: alternate;        
@@ -276,7 +276,7 @@ html, body {
     align-items: center;
     justify-content: center;
     column-gap: 100px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     padding-top: 10px;
     border-top-left-radius: 40px;
@@ -286,8 +286,8 @@ html, body {
 
 .description-img {    
     object-fit: contain;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .rotate-left {
