@@ -109,7 +109,6 @@ html, body {
 }
 
 .f-body-main {
-    /* background: url('./assets/images/chockolate.jpg') center / cover;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +118,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 650px;
-    height: 190px;
+    width: 750px;
+    height: 220px;
     background: url('./assets/images/logo.jpg') center / cover no-repeat;
     align-self: center;
     visibility: hidden;
@@ -143,15 +142,38 @@ html, body {
     transition: all 5s 2s;     
 }
 
-.about-link {
+@keyframes link {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 3px;
+    }
+}
+
+.link-container {
+    position: relative;
     margin: 0 auto;
-    display: inline-block;
+    width: 48px;
+    height: 55px;
+}
+
+.about-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
     background: url('./assets/images/svg/down.svg');
     width: 48px;
-    height: 48px;
+    height: 48px;    
+    transition: all 5s 4s; 
+    animation-name: link;
+    animation-duration: 0.25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;    
+    animation-direction: alternate;        
     visibility: hidden;
     opacity: 0;
-    transition: all 5s 4s; 
 }
 
 .visible {
@@ -168,8 +190,12 @@ html, body {
 }
 
 .f-bg3 {
-    background: url('./assets/images/chockolate2.jpg') center / cover no-repeat fixed;
+    background: url('./assets/images/marshmallow3.jpg') center / cover no-repeat fixed;
 }
+
+/* .f-bg5 {
+    background: url('./assets/images/chockolate.jpg') center / cover no-repeat fixed;
+} */
 
 .f-bg4 {
     background: url('./assets/images/marshmallow2.jpg') center / cover no-repeat fixed;
@@ -179,6 +205,167 @@ html, body {
     background-color: #f0fde6; 
     min-height: 100vh;  
 }
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;    
+    text-align: center;    
+    padding: 50px 20px; 
+}
+
+.about-container {
+    margin: auto auto;
+    padding: 25px 0px;
+    width: 85%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-span {
+    color: #3e7e4c; 
+    font-weight: 900;
+}
+
+.about-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.all-items {
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-item {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+    padding: 30px 5px;
+    box-shadow: 0 0 5px #f0fde6;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 55px #9aeeb3;
+}
+
+.about-text {
+    font-size: 20px;
+    margin: auto 20px;
+    color: #492e0a;
+    font-weight: 700;
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    height: 200px;
+    width: 100%;
+    padding-top: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #c5e7cf;
+}
+
+.description-img {    
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+
+.rotate-left {
+    transform: rotate(-30deg);
+    transition: 0.5s;
+}
+
+.rotate-left:hover {
+    transform: rotate(-390deg);
+}
+
+.rotate-right {
+    transform: rotate(30deg);
+    transition: 0.5s;
+}
+
+.rotate-right:hover {
+    transform: rotate(390deg);
+}
+
+.description-text {
+    padding-bottom: 10px;
+    color: #492e0a;
+    font-weight: 700;
+    background-color: #c5e7cf;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.description-text2 {
+    margin-top: 30px;
+}
+
+.about-holidays {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.one-holiday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 1px solid #fff;
+}
+
+.holiday-img {
+    width: 100px;
+    height: 100px;    
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.holiday-img:hover {
+    width: 120px;
+    height: 120px;
+}
+
+.holiday-text {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.holiday-text2 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* END ABOUT */
+
+/* CATALOG */
 
 .catalog-container {
     display: flex;
