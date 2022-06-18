@@ -15,16 +15,19 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li>
+                        <a href="#about" class="nav-link">О нас</a>
+                    </li>
+                    <li>
                         <a href="#catalog" class="nav-link">Каталог</a>
                     </li>
                     <li>
                         <a href="#delivery" class="nav-link">Доставка</a>
                     </li>
                     <li>
-                        <a href="#call" class="nav-link">Заказать звонок</a>
+                        <a href="#question" class="nav-link">Вопрос-ответ</a>
                     </li>
                     <li>
-                        <a href="#question" class="nav-link">Частые вопросы</a>
+                        <a href="#call" class="nav-link">Заказать звонок</a>
                     </li>
                     <li>
                         <a href="#contacts" class="nav-link">Контакты</a>
@@ -34,8 +37,75 @@
         </header>
         <section class="fullscreen">                         
             <div class="f-body f-body-main">                               
-                <div class="body-content"></div>
-                <div class="f-text">Какой-то слоган (Собственное производство изделий из шоколада...), ссылки и т.д.</div>
+                <div class="main-logo"></div>
+                <div class="main-text">Для праздника не нужен повод...</div>
+                <div class="link-container">
+                    <a href="#about" class="about-link"></a>
+                </div>
+            </div>
+        </section>        
+        <section class="fullscreen" id="about">
+            <div class="f-body about">
+                <div class="about-container">                    
+                    <h2 class="about-title">Мы готовимся к Вашему <span class="about-span">Особому случаю</span> основательно!</h2>
+                    <div class="all-items">
+                        <div class="about-item">
+                            <img src="./assets/images/b-chockolate.jpg" alt="Бельгийский шоколад" class="about-img">
+                            <p class="about-text">Бельгийский шоколад</p>
+                        </div>
+                        <div class="about-item">                            
+                            <img src="./assets/images/m.jpg" alt="Зефир" class="about-img"> 
+                            <p class="about-text">Зефир</p>
+                        </div>
+                        <div class="about-item">
+                            <img src="./assets/images/sp-marmalade.jpg" alt="Испанский мармелад" class="about-img">
+                            <p class="about-text">Испанский мармелад</p>
+                        </div>
+                        <div class="about-item">                            
+                            <img src="./assets/images/tea.jpg" alt="Ароматный чай" class="about-img">
+                            <p class="about-text">Ароматный чай</p>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <img src="./assets/images/svg/present-in-blue.svg" alt="gift" class="description-img rotate-left">
+                        <img src="./assets/images/svg/christmas-gift-monsterbrain.svg" alt="gift2" class="description-img rotate-right">                        
+                    </div> 
+                    <p class="description-text">Каждый подарочный набор оформлен оригинально - впечатления в подарок!</p>
+                    <p class="description-text2">
+                        Сформируйте свой мега крутой набор, который подойдет для любого <span class="about-span">Особого случая</span>
+                    </p> 
+                    <div class="about-holidays">
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/birthday.svg" alt="birthday" class="holiday-img">
+                            <p class="holiday-text">День рождения</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/school.svg" alt="school" class="holiday-img">
+                            <p class="holiday-text">Выпускной</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/wedding.svg" alt="wedding" class="holiday-img">
+                            <p class="holiday-text">Свадьба</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/new_year.svg" alt="new_year" class="holiday-img">
+                            <p class="holiday-text">Новый год</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/christmas.svg" alt="christmas" class="holiday-img">
+                            <p class="holiday-text">Рождество</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/8.svg" alt="march 8" class="holiday-img">
+                            <p class="holiday-text">8 Марта</p>
+                        </div>
+                        <div class="one-holiday">
+                            <img src="./assets/images/svg/love.svg" alt="love" class="holiday-img">
+                            <p class="holiday-text">14 февраля</p>                            
+                        </div>                        
+                    </div>    
+                    <p class="holiday-text2">Или просто так, чтобы удивить!</p>               
+                </div>
             </div>
         </section>
         <section class="fullscreen2 f-bg">            
@@ -166,18 +236,66 @@
         <section class="fullscreen2 f-bg2">            
         </section>
         <section class="fullscreen" id="delivery">
-            <div class="f-body catalog-container">
-                <h2 class="title">Доставка</h2>
-                <div>Блок с информацией о доставке</div>                
+            <div class="f-body delivery">                
+                <div class="delivery-container">
+                    <h2 class="title title-wrapper">Доставка</h2>
+                    <div class="one-item left">
+                        <h3 class="delivery-title home">Для жителей Гродно</h3>
+                        <p class="delivery-text">Доставки по г.Гродно <span class="delivery-span">понедельник–пятница с 18:30 до 22:00 при заказе от 40 BYN</span></p>
+                    </div>
+                    <div class="one-item right">
+                        <h3 class="delivery-title mail">Доставка почтой</h3>
+                        <p class="delivery-text">Мы отправляем заказы почтой по РБ исключительно с пометкой <span class="delivery-span">«Хрупко»</span>.
+                        Отправка почтой осуществляется <span class="delivery-span">после 100% предоплаты заказа + стоимость доставки</span>.<br> 
+                        <span class="delivery-span">Дни отправки:</span> на следующий день после оплаты, кроме субботы и воскресенья
+                        </p>
+                    </div>
+                    <div class="one-item left">
+                        <h3 class="delivery-title car">Самовывоз</h3>
+                        <p class="delivery-text">Вы всегда можете забрать заказ самостоятельно!
+                            Самовывоз осуществляется по адресу: <span class="delivery-span">г.Гродно, пр-т Янки Купалы, 71. 
+                            Только будние дни с 10:00 до 17:30</span>                            
+                        </p>
+                    </div>
+                </div>                              
             </div>
         </section>
         <section class="fullscreen2 f-bg3">            
+        </section>               
+        <section class="fullscreen" id="question">
+            <div class="f-body questions">                
+                <div class="questions-cotainer">
+                    <h2 class="title title-wrapper">Вопрос-ответ</h2>
+                    <div class="one-question">
+                        <h3 class="question-title">Как произвести оплату?</h3>
+                        <div class="question-text">Оплату Вы можете произвести в <span class="delivery-span">любом банке, интернет-банкинге, мобильном банкинге, инфокиоске, банкомате, кассе и т.д.</span></div>
+                    </div>
+                    <div class="one-question">
+                        <h3 class="question-title">У вас есть доставка в другие города Беларуси?</h3>
+                        <div class="question-text">Да, подарочные наборы отправляются Белпочтой исключительно с пометкой <span class="delivery-span">«Хрупко»</span>. Отправка осуществляется <span class="delivery-span">после 100% предоплаты заказа + стоимость доставки. Срок доставки в другие города:</span> 1-3 дня с момента отправки</div>
+                    </div>
+                    <div class="one-question">
+                        <h3 class="question-title">Нужно ли делать предварительный  заказ?</h3>
+                        <div class="question-text">Изготовление заказа осуществляется 1-3 дня, поэтому <span class="delivery-span">заказ необходимо оформлять за 2 дня до Вашего "Особого случая". Если нужна доставка по РБ - не позже 6-ти дней</span>.  Все вопросы по доставке и сроках решаем индивидуально</div>
+                    </div>
+                    <div class="one-question">
+                        <h3 class="question-title">Можно ли собрать набор по своему желанию?</h3>
+                        <div class="question-text">Да, есть возможность собрать индивидуальный подарочный набор<span class="delivery-span">*</span>. <br><br><span class="delivery-span">*</span>Индивидуальный подарочный набор подразумевает комбинирование элементов из одного или нескольких наборов</div>
+                    </div>
+                    <div class="one-question">
+                        <h3 class="question-title">Можно ли вернуть?</h3>
+                        <div class="question-text"><span class="delivery-span">Согласно статье 28 Закона РБ "О защите прав потребителей" 90-З от 09.01.2002 г. пункт 5</span> пищевые продукты надлежащего качества обмену и возврату не подлежат. <br><br>Если у Вас возникли какие-либо вопросы или трудности с товаром, Вы можете написать на почту: <a href="mailto:osobyjsluchaj@gmail" class="delivery-span" title="Написать">osobyjsluchaj@gmail.com</a> и мы поможем их решить в кратчайшие сроки</div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="fullscreen2 f-bg4">            
         </section>
         <section class="fullscreen" id="call">
             <div class="f-body f-body-form">
                 <div class="form">
                     <form action="#" class="form-body" id="form">                    
-                        <p class="form-title">Появились вопросы?</p>
+                        <p class="form-title">Остались вопросы?</p>
                         <p class="form-title2">Оставьте свои контактные данные и мы свяжемся с Вами в ближайшее время!</p>
                         <div class="form-item">
                             <label for="formName" class="form-label">Имя*</label>
@@ -196,14 +314,6 @@
                 </div>
             </div>
         </section>
-        <section class="fullscreen2 f-bg4">            
-        </section>
-        <section class="fullscreen" id="question">
-            <div class="f-body catalog-container">
-                <h2 class="title">Вопросы</h2>
-                <div>Блок с вопросами</div>                
-            </div>
-        </section>
         <div class="contacts" id="contacts">
             <div class="c-body">
                 <p>
@@ -219,7 +329,9 @@
             </div>
         </footer>
    </div> 
-   <script type="module" src="./assets/js/index.js"></script>
+   <script type="module" src="./assets/js/catalog.js"></script>
+   <script type="module" src="./assets/js/questions.js"></script>
+   <script type="module" src="./assets/js/main.js"></script>
    <script type="module" src="./assets/js/form.js"></script>
    <script src="js/jquery.maskedinput.min.js"></script>
    <script>
