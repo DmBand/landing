@@ -39,6 +39,11 @@ html, body {
     src: url("./assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Pacifico';
+    src: url("./assets/fonts/Pacifico-Regular.ttf");
+}
+
 
 .wrapper {
     min-height: 100vh;
@@ -53,7 +58,6 @@ html, body {
     z-index: 10;
     width: 100%;
     min-height: 40px;
-    /* background-color: #0c0602d0; */
     background-color: #f0fde6;
     font-size: 11px;
     line-height: 38px;
@@ -63,7 +67,6 @@ html, body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* column-gap: 20px; */
 }
 
 .nav-list li {
@@ -86,7 +89,6 @@ html, body {
 .fullscreen {
     min-height: 100vh;
     display: flex;
-    /* background-color: #0c0602;     */
     background-color: #f0fde6;
 }
 
@@ -107,31 +109,43 @@ html, body {
 }
 
 .f-body-main {
-    background: url('./assets/images/chockolate.jpg') center / cover; 
+    /* background: url('./assets/images/chockolate.jpg') center / cover;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.body-content {
+.main-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
-    height: 450px;
-    padding: 20px;    
+    width: 650px;
+    height: 190px;
     background: url('./assets/images/logo.jpg') center / cover no-repeat;
     align-self: center;
-    border-radius: 450px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 5s;
 }
 
-.f-text {
-    max-width: 500px;
-    padding: 10px;
+.main-text {
+    border-radius: 10px;
+    padding: 10px 15px;
     align-self: center;
-    background-color: #c4a69186;
-    font-size: 20px;
-    margin-top: 20px;     
+    background-color: #f0fde6;
+    color: #3e7e4c;
+    font-family: 'Pacifico';
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 5s 2s;     
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .f-bg {
@@ -385,6 +399,7 @@ html, body {
     margin: auto auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
     background-color: #f0ffffd2;
 }
@@ -410,7 +425,7 @@ html, body {
 }
 
 .question-title.deg::after{
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
 }
 
 
