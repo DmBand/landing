@@ -186,19 +186,19 @@ html, body {
 }
 
 .f-bg2 {
-    background: url('./assets/images/marmalade.jpg') center / cover no-repeat fixed;
+    background: url('./assets/images/chockolate.jpg') center / cover no-repeat fixed;
 }
 
 .f-bg3 {
     background: url('./assets/images/marshmallow3.jpg') center / cover no-repeat fixed;
 }
 
-/* .f-bg5 {
-    background: url('./assets/images/chockolate.jpg') center / cover no-repeat fixed;
-} */
-
 .f-bg4 {
     background: url('./assets/images/marshmallow2.jpg') center / cover no-repeat fixed;
+}
+
+.f-bg5 {
+    background: url('./assets/images/marmalade.jpg') center / cover no-repeat fixed;
 }
 
 .catalog {
@@ -438,9 +438,6 @@ html, body {
     width: 350px;
     margin: 20px 0px;
     text-align: center;
-    border-radius: 10px;
-    background-color: #c5e7cf;
-    /* box-shadow: 0 0 15px #5a5858; */
 }
 
 .product-img {
@@ -517,7 +514,7 @@ html, body {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: #c5e7cfb7;
+    background-color: #f0b32e91;
     cursor: default;
 }
 
@@ -606,7 +603,7 @@ html, body {
     margin-bottom: 15px;
     position: relative;
     text-align: start;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;  
     font-weight: 700;  
 }
@@ -631,17 +628,12 @@ html, body {
     color: #000;
     text-align: justify;
     font-size: 16px;
-    height: 0;
     width: 95%;
-    visibility: hidden; 
-    opacity: 0;  
-    transition: all 0.3s linear; 
+    display: none;
 }
 
-.active-text {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+.one-product.active-text .question-text {
+    display: block;
 }
 
 /* ___END QUESTIONS */
@@ -763,12 +755,7 @@ textarea.form-input {
     box-shadow: 0 0 20px red;
 }
 
-
-
 /* __________END FORM */
-
-.contacts {
-}
 
 .c-body {
     max-width: 1440px;    
