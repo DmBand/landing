@@ -440,7 +440,6 @@ html, body {
     text-align: center;
     border-radius: 10px;
     background-color: #c5e7cf;
-    /* box-shadow: 0 0 15px #5a5858; */
 }
 
 .product-img {
@@ -606,7 +605,7 @@ html, body {
     margin-bottom: 15px;
     position: relative;
     text-align: start;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;  
     font-weight: 700;  
 }
