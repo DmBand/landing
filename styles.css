@@ -438,8 +438,6 @@ html, body {
     width: 350px;
     margin: 20px 0px;
     text-align: center;
-    border-radius: 10px;
-    background-color: #c5e7cf;
 }
 
 .product-img {
@@ -516,7 +514,7 @@ html, body {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: #c5e7cfb7;
+    background-color: #f0b32e91;
     cursor: default;
 }
 
