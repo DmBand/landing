@@ -282,10 +282,10 @@
                                                 &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Заполнив <a href="#call" class="delivery-span" style="text-decoration: underline">форму</a> на сайте
                                             </li>
                                             <li class="nested-step">
-                                                &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Связаться с нами по <span class="delivery-span" style="text-decoration: underline">телефону</span>
+                                                &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Связаться с нами по <a href="#" class="delivery-span" style="text-decoration: underline">телефону</a>
                                             </li>
                                             <li class="nested-step">
-                                                &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Написать нам в <span class="delivery-span" style="text-decoration: underline">Instagram</span>
+                                                &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Написать нам в <a href="#" class="delivery-span" style="text-decoration: underline">Instagram</a>
                                             </li>
                                         </ul>
                                     </p>
@@ -345,7 +345,7 @@
                         <h3 class="question-title">Можно ли вернуть?</h3>
                         <div class="question-text"><span class="delivery-span">Согласно статье 28 Закона РБ "О защите прав потребителей" 90-З от 09.01.2002 г. пункт 5</span> пищевые продукты надлежащего качества обмену и возврату не подлежат. <br><br>Если у Вас возникли какие-либо вопросы или трудности с товаром, Вы можете написать на почту: <a href="mailto:osobyjsluchaj@gmail" class="delivery-span" title="Написать">osobyjsluchaj@gmail.com</a> и мы поможем их решить в кратчайшие сроки</div>
                     </div>
-                </div>                
+                </div>                                
             </div>
         </section>
         <section class="fullscreen2 f-bg4">            
@@ -395,6 +395,13 @@
    <script src="js/jquery.maskedinput.min.js"></script>
    <script>
     $(".mask").mask("+375999999999");
+    </script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.question-title').click(function(){
+                $(this).parents('.one-question').toggleClass("active-text").find('.question-text').slideToggle();
+            })
+        })
     </script>
 </body>
 </html>

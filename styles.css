@@ -628,17 +628,12 @@ html, body {
     color: #000;
     text-align: justify;
     font-size: 16px;
-    height: 0;
     width: 95%;
-    visibility: hidden; 
-    opacity: 0;  
-    transition: all 0.3s linear; 
+    display: none;
 }
 
-.active-text {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+.one-product.active-text .question-text {
+    display: block;
 }
 
 /* ___END QUESTIONS */
