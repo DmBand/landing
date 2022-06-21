@@ -73,7 +73,7 @@ html, body {
     width: 100%;
     min-height: 40px;
     background-color: #f0fde6;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 38px;
 }
 
@@ -94,11 +94,11 @@ html, body {
     font-weight: 700;
     padding: 0px 10px;
     text-transform: uppercase;  
-    transition: 0.2s; 
+    transition: 0.5s; 
 }
 
 .nav-link:hover {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
@@ -112,7 +112,7 @@ html, body {
     }
 
     .nav-link:hover {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 
@@ -650,6 +650,10 @@ html, body {
     .all-items {
         flex-wrap: wrap;
     }
+
+    .description-text {
+        padding: 10px 15px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -661,8 +665,7 @@ html, body {
         font-size: 18px;
     }
 
-    .description-text {
-        padding: 10px 15px;
+    .description-text {        
         font-size: 13px;
     }
 
@@ -1155,7 +1158,7 @@ html, body {
 }
 
 .order-title {
-    font-weight: 700;
+    font-weight: 900;
     text-decoration: underline;
 }
 
