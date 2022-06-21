@@ -642,7 +642,7 @@ html, body {
 /* _____________FORM */
 
 .f-body-form {
-    background: url('./assets/images/call.jpg') center / cover; 
+    background: url('./assets/images/call.png') center no-repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -653,11 +653,11 @@ html, body {
 }
 
 .form {
-    max-width: 600px;
+    max-width: 800px;
     padding: 25px;
     margin: 30px auto 0;
     border-radius: 10px;
-    background-color: #c4a691c9;
+    background-color: #c5e7cfdc;
 }
 
 .form-body {
@@ -736,8 +736,8 @@ textarea.form-input {
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    background-color: #443115;
-    color: rgb(228, 228, 228);
+    background-color: #5cb378;
+    color: #e4e4e4;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -749,7 +749,7 @@ textarea.form-input {
 }
 
 .form-button:hover {
-    background-color: #61451c;
+    background-color: #459c61;
 }
 
 .form-input._error {
