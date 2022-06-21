@@ -1163,7 +1163,7 @@ html, body {
 .form {
     background: url('./assets/images/call.png') center no-repeat; 
     max-width: 800px;    
-    margin: 30px auto 0;    
+    margin: 30px auto;    
 }
 
 .form-body {
@@ -1245,7 +1245,7 @@ textarea.form-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60px;
+    height: 60px;
     background-color: #5cb378;
     color: #e4e4e4;
     font-size: 18px;
@@ -1284,14 +1284,24 @@ textarea.form-input {
 @media (max-width: 425px) {
     .form-title {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .form-title2 {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .form {
+        max-width: 95%;
+    }
+
+    .form-body {
+        padding: 15px;
     }
 
     .form-button {
+        height: 40px;
         width: 65%;
         font-size: 14px;
     }
