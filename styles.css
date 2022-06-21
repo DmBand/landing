@@ -369,7 +369,7 @@ html, body {
 }
 
 .f-bg4 {
-    background: url('./assets/images/marshmallow2.jpg') center / cover no-repeat fixed;
+    background: url('./assets/images/chockolate3.jpg') center / cover no-repeat fixed;
 }
 
 .f-bg5 {
@@ -508,7 +508,7 @@ html, body {
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    border: 1px solid #fff;
+    border: 1px solid #f0fde6;
 }
 
 .holiday-img {
