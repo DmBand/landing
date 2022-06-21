@@ -35,8 +35,21 @@ html, body {
 }
 
 @font-face {
-    font-family: "Monserat";
+    font-family: "Montserrat";
     src: url("./assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
+    font-weight: 900;
 }
 
 @font-face {
@@ -48,7 +61,7 @@ html, body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Monserat';
+    font-family: 'Montserrat';
     font-weight: 400;
 }
 
@@ -77,6 +90,7 @@ html, body {
 
 .nav-link {
     color: #000;
+    font-family: 'Montserrat';
     font-weight: 700;
     padding: 0px 10px;
     text-transform: uppercase;  
@@ -245,10 +259,43 @@ html, body {
 }
 
 .fullscreen2 {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     background-color: #f0fde6;
     padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .fullscreen2 {
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .f-bg {
+        display: none;
+    }
+    
+    .f-bg2 {
+        display: none;
+    }
+    
+    .f-bg3 {
+        display: none;
+    }
+    
+    .f-bg4 {
+        display: none;
+    }
+    
+    .f-bg5 {
+        display: none;
+    }
+
+    .fullscreen {
+        border-bottom: 2px solid #000;
+    }
 }
 
 .f-body {
@@ -376,11 +423,6 @@ html, body {
     background: url('./assets/images/marmalade.jpg') center / cover no-repeat fixed;
 }
 
-.catalog {
-    background-color: #f0fde6; 
-    min-height: 100vh;  
-}
-
 /* ABOUT */
 
 .about {
@@ -404,7 +446,7 @@ html, body {
 
 .about-span {
     color: #3e7e4c; 
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .about-title {
@@ -654,6 +696,11 @@ html, body {
 
 /* CATALOG */
 
+.catalog {
+    background-color: #f0fde6; 
+    min-height: 100vh;  
+}
+
 .catalog-container {
     display: flex;
     flex-direction: column;
@@ -684,7 +731,7 @@ html, body {
 }
 
 .catalog-btn {
-    font-family: 'Monserat';
+    font-family: 'Montserrat';
     font-weight: 700;
     text-transform: uppercase;
     width: 130px;
@@ -840,6 +887,10 @@ html, body {
 }
 
 @media (max-width: 425px) {
+    .catalog {
+        border-bottom: 2px solid #000;
+    }
+
     .title {
         font-size: 18px;
     }
@@ -1062,7 +1113,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
-    background-color: #c5e7cfd5;
+    background-color: #c5e7cfdc;
 }
 
 .question-title {
@@ -1071,7 +1122,8 @@ html, body {
     text-align: start;
     font-size: 22px;
     cursor: pointer;  
-    font-weight: 700;  
+    font-weight: 900; 
+    color: #173f23; 
 }
 
 .question-title::after {
@@ -1102,10 +1154,16 @@ html, body {
     display: block;
 }
 
+.order-title {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
     .question-title {
         font-size: 18px;
         padding-right: 45px;
+        height: 45px;
     }
 
     .order-text {
@@ -1132,6 +1190,8 @@ html, body {
 
     .question-title {
         font-size: 16px;
+        height: auto;
+        min-height: 40px;
     }
 
     .question-text {
@@ -1204,7 +1264,7 @@ html, body {
     font-size: 20px;
     margin-bottom: 30px;
     color: #0c0602d0;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .form-item {
@@ -1215,11 +1275,11 @@ html, body {
     display: block;
     margin-bottom: 10px;
     letter-spacing: 2px;
-    color: #38332d;
+    color: #000000;
     font-weight: 700;
 }
 .form-input {
-    font-family: 'Monserat';
+    font-family: 'Montserrat';
     height: 50px;
     padding: 0px 10px;
     border-radius: 5px;
@@ -1251,7 +1311,7 @@ textarea.form-input {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Monserat';
+    font-family: 'Montserrat';
     font-weight: 700;
     cursor: pointer;
     border-radius: 20px;
