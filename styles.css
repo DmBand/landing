@@ -736,6 +736,7 @@ html, body {
 .catalog-btn {
     font-family: 'Montserrat';
     font-weight: 700;
+    font-size: 12px;
     text-transform: uppercase;
     width: 130px;
     height: 40px;
@@ -903,13 +904,13 @@ html, body {
     }
 
     .catalog-btn {
-        width: 75px;
+        width: 80px;
         height: 30px;
-        font-size: 10px;
+        letter-spacing: 0;
     }
 
     .btn-active {
-        width: 80px;
+        width: 90px;
         height: 40px;
     }
 
@@ -1158,6 +1159,7 @@ html, body {
 }
 
 .order-title {
+    text-align: start;
     font-weight: 900;
     text-decoration: underline;
 }
