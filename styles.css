@@ -903,16 +903,18 @@ html, body {
         padding: 0 10px;
     }
 
+    .catalog-buttons {
+        flex-direction: column;
+        height: auto;
+    }
+
     .catalog-btn {
-        width: 80px;
+        margin-bottom: 5px;
         height: 30px;
-        letter-spacing: 0;
-        font-size: 9px;
     }
 
     .btn-active {
-        width: 90px;
-        height: 40px;
+        height: 30px;
     }
 
     .product-img {
