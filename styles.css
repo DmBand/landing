@@ -1247,6 +1247,7 @@ html, body {
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 .form-body._sending::after {
@@ -1273,6 +1274,7 @@ html, body {
 .form-item {
     margin-bottom: 15px;
 }
+
 .form-label {
     font-size: 18px;
     display: block;
@@ -1281,6 +1283,7 @@ html, body {
     color: #000000;
     font-weight: 700;
 }
+
 .form-input {
     font-family: 'Montserrat';
     height: 50px;
