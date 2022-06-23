@@ -135,32 +135,38 @@
             </div>
             <div class="one-product-container-chocolate active-product">
                 {% for c in chockolate %}
-                <div class="one-product">
-                    <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
-                    <p class="product-name">{{c.name}}</p>
-                    <p class="product-description">{{c.description}}</p>
-                    <p class="product-price">{{c.price}}</p>
-                </div>
+                    {% if c.is_published %}
+                    <div class="one-product">
+                        <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
+                        <p class="product-name">{{c.name}}</p>
+                        <p class="product-description">{{c.description}}</p>
+                        <p class="product-price">{{c.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <div class="one-product-container-marshmallow">
                 {% for m in marshmallow %}
-                <div class="one-product">
-                    <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                    <p class="product-name">{{m.name}}</p>
-                    <p class="product-description">{{m.description}}</p>
-                    <p class="product-price">{{m.price}}</p>
-                </div>
+                    {% if m.is_published %}
+                    <div class="one-product">
+                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                        <p class="product-name">{{m.name}}</p>
+                        <p class="product-description">{{m.description}}</p>
+                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <div class="one-product-container-marmalade">
                 {% for m in marmalade %}
-                <div class="one-product">
-                    <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                    <p class="product-name">{{m.name}}</p>
-                    <p class="product-description">{{m.description}}</p>
-                    <p class="product-price">{{m.price}}</p>
-                </div>
+                    {% if m.is_published %}
+                    <div class="one-product">
+                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                        <p class="product-name">{{m.name}}</p>
+                        <p class="product-description">{{m.description}}</p>
+                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
