@@ -416,11 +416,11 @@ html, body {
 }
 
 .f-bg4 {
-    background: url('../images/chockolate3.jpg') center / cover no-repeat fixed;
+    background: url('../images/marmalade.jpg') center / cover no-repeat fixed;
 }
 
 .f-bg5 {
-    background: url('../images/marmalade.jpg') center / cover no-repeat fixed;
+    background: url('../images/chockolate3.jpg') center / cover no-repeat fixed;
 }
 
 /* ABOUT */
@@ -1388,21 +1388,6 @@ textarea.form-input {
 }
 
 /* __________END FORM */
-
-.c-body {
-    max-width: 1440px;    
-    margin: 0px auto;
-    padding: 30px 20px;
-    background-color: #301c0efd;
-}
-
-.c-body p {
-    margin: 0px 0px 20px 0px; 
-}
-
-.c-body p:last-child {
-    margin: 0;
-}
 
 /* FOOTER */
 
