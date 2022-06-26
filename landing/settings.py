@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landing_app.apps.LandingAppConfig'
+    # my apps
+    'landing_app.apps.LandingAppConfig',
+    # other apps
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
