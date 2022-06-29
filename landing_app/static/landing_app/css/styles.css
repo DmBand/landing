@@ -946,8 +946,8 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1440px;    
-    text-align: center;    
+    max-width: 1440px;
+    text-align: center;
     padding: 50px 20px;
 
 }
@@ -1025,7 +1025,7 @@ html, body {
 }
 
 .delivery-span {
-    font-weight: 700; 
+    font-weight: 700;
     color: #464645;
 }
 
@@ -1077,11 +1077,11 @@ html, body {
     .home::after {
         background: none;
     }
-    
+
     .mail::after {
         background: none;
     }
-    
+
     .car::after {
         background: none;
     }
@@ -1105,8 +1105,8 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1440px;    
-    text-align: center;    
+    max-width: 1440px;
+    text-align: center;
     padding: 50px 20px;
 }
 
@@ -1128,9 +1128,9 @@ html, body {
     position: relative;
     text-align: start;
     font-size: 22px;
-    cursor: pointer;  
-    font-weight: 900; 
-    color: #173f23; 
+    cursor: pointer;
+    font-weight: 900;
+    color: #173f23;
 }
 
 .question-title::after {
@@ -1234,8 +1234,8 @@ html, body {
 
 .form {
     background: url('../images/call.png') center no-repeat;
-    max-width: 800px;    
-    margin: 30px auto;    
+    max-width: 800px;
+    margin: 30px auto;
 }
 
 .form-body {
@@ -1408,14 +1408,14 @@ textarea.form-input {
 }
 
 .footer-item {
-    display: flex; 
-    flex-direction: column; 
-    font-size: 13px;  
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
 }
 
 .footer-item2 {
     background: url('../images/logo.jpg') center/cover no-repeat;
-    width: 100px;    
+    width: 100px;
     height: 80px;
     margin-left: 30px;
 }
@@ -1440,7 +1440,7 @@ textarea.form-input {
     }
 
     .footer-item {
-        order: 2;  
+        order: 2;
     }
 
     .footer-item2 {
