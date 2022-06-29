@@ -1179,6 +1179,10 @@ html, body {
     }
 }
 
+.nested-list {
+    text-align: start;
+}
+
 @media (max-width: 768px) {
     .questions-cotainer {
         width: 90%;
