@@ -32,10 +32,6 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 @font-face {
@@ -76,7 +72,7 @@ html, body {
     z-index: 2;
     width: 100%;
     min-height: 40px;
-    background-color: #f7ffe3;
+    background-color: #f6ffe5;
     font-size: 10px;
     line-height: 38px;
 }
@@ -259,13 +255,13 @@ html, body {
 .fullscreen {
     min-height: 100vh;
     display: flex;
-    background-color: #f7ffe3;
+    background-color: #f6ffe5;
 }
 
 .fullscreen2 {
     min-height: 70vh;
     display: flex;
-    background-color: #f7ffe3;
+    background-color: #f6ffe5;
     padding: 10px 0;
 }
 
@@ -334,7 +330,7 @@ html, body {
     border-radius: 10px;
     padding: 10px 15px;
     align-self: center;
-    background-color: #f7ffe3;
+    background-color: #f6ffe5;
     color: #3e7e4c;
     font-family: 'Pacifico';
     letter-spacing: 2px;
@@ -472,7 +468,7 @@ html, body {
     align-items: center;
     border-radius: 60px;
     padding: 30px 5px;
-    background-color: #f7ffe3;
+    box-shadow: 0 0 5px #f6ffe5;
 }
 
 .about-img {
@@ -554,7 +550,7 @@ html, body {
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    background-color: #f7ffe3;
+    border: 1px solid #f6ffe5;
 }
 
 .holiday-img {
@@ -704,7 +700,7 @@ html, body {
 /* CATALOG */
 
 .catalog {
-    background-color: #f7ffe3;
+    background-color: #f6ffe5;
     min-height: 100vh;  
 }
 
@@ -914,11 +910,11 @@ html, body {
 
     .catalog-btn {
         margin-bottom: 5px;
-        height: 40px;
+        height: 30px;
     }
 
     .btn-active {
-        height: 40px;
+        height: 30px;
     }
 
     .product-img {
@@ -1183,6 +1179,10 @@ html, body {
     }
 }
 
+.nested-list {
+    text-align: start;
+}
+
 @media (max-width: 768px) {
     .questions-cotainer {
         width: 90%;
@@ -1396,7 +1396,7 @@ textarea.form-input {
 /* FOOTER */
 
 .footer {
-    background-color: #f0fde6;
+    background-color: #f6ffe5;
     border-top: 2px groove #c5e7cfdc;
 }
 
