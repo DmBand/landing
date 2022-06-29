@@ -33,9 +33,9 @@
                 <li>
                     <a href="#call" class="nav-link">Оформить заказ</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#contacts" class="nav-link">Контакты</a>
-                </li>
+                </li> -->
             </ul>
             <div class="header-burger">
                 <span></span>
@@ -135,32 +135,38 @@
             </div>
             <div class="one-product-container-chocolate active-product">
                 {% for c in chockolate %}
-                <div class="one-product">
-                    <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
-                    <p class="product-name">{{c.name}}</p>
-                    <p class="product-description">{{c.description}}</p>
-                    <p class="product-price">{{c.price}}</p>
-                </div>
+                    {% if c.is_published %}
+                    <div class="one-product">
+                        <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
+                        <p class="product-name">{{c.name}}</p>
+                        <p class="product-description">{{c.description}}</p>
+                        <p class="product-price">{{c.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <div class="one-product-container-marshmallow">
                 {% for m in marshmallow %}
-                <div class="one-product">
-                    <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                    <p class="product-name">{{m.name}}</p>
-                    <p class="product-description">{{m.description}}</p>
-                    <p class="product-price">{{m.price}}</p>
-                </div>
+                    {% if m.is_published %}
+                    <div class="one-product">
+                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                        <p class="product-name">{{m.name}}</p>
+                        <p class="product-description">{{m.description}}</p>
+                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <div class="one-product-container-marmalade">
                 {% for m in marmalade %}
-                <div class="one-product">
-                    <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                    <p class="product-name">{{m.name}}</p>
-                    <p class="product-description">{{m.description}}</p>
-                    <p class="product-price">{{m.price}}</p>
-                </div>
+                    {% if m.is_published %}
+                    <div class="one-product">
+                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                        <p class="product-name">{{m.name}}</p>
+                        <p class="product-description">{{m.description}}</p>
+                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
@@ -213,28 +219,28 @@
                                 <p class="order-text">
                                     Вы можете сделать это <span
                                         class="delivery-span">любым удобным для вас способом:</span>
-                                <ul class="nested-list">
-                                    <li class="nested-step">
-                                        &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Заполнив
-                                        <a href="#call" class="delivery-span"
-                                           style="text-decoration: underline">
-                                            форму
-                                        </a>
-                                        на сайте
-                                    </li>
-                                    <li class="nested-step">
-                                        &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Связаться с нами по
-                                        <a href="#" class="delivery-span" style="text-decoration: underline">
-                                            телефону
-                                        </a>
-                                    </li>
-                                    <li class="nested-step">
-                                        &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Написать нам в
-                                        <a href="#" class="delivery-span" style="text-decoration: underline">
-                                            Instagram
-                                        </a>
-                                    </li>
-                                </ul>
+                                    <ul class="nested-list">
+                                        <li class="nested-step">
+                                            &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Заполнив
+                                            <a href="#call" class="delivery-span"
+                                               style="text-decoration: underline">
+                                                форму
+                                            </a>
+                                            на сайте
+                                        </li>
+                                        <li class="nested-step">
+                                            &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Связаться с нами по телефону
+                                            <a href="tel:+375445536540" class="delivery-span" style="text-decoration: underline">
+                                                +375445536540
+                                            </a>
+                                        </li>
+                                        <li class="nested-step">
+                                            &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Написать нам в
+                                            <a href="#" class="delivery-span" style="text-decoration: underline">
+                                                Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </p>
                             </li>
                             <li class="order-step">
@@ -307,7 +313,7 @@
                     <h3 class="question-title">Можно ли вернуть?</h3>
                     <div class="question-text"><span class="delivery-span">Согласно статье 28 Закона РБ "О защите прав потребителей" 90-З от 09.01.2002 г. пункт 5</span>
                         пищевые продукты надлежащего качества обмену и возврату не подлежат. <br><br>Если у Вас возникли
-                        какие-либо вопросы или трудности с товаром, Вы можете написать на почту: <a
+                        какие-либо вопросы или трудности с товаром, Вы можете написать на почту <a
                                 href="mailto:osobyjsluchaj@gmail" class="delivery-span" title="Написать">osobyjsluchaj@gmail.com</a>
                         и мы поможем их решить в кратчайшие сроки
                     </div>
@@ -342,20 +348,15 @@
             </div>
         </div>
     </section>
-    <section class="fullscreen2 f-bg5">
-    </section>
-    <div class="contacts" id="contacts">
-        <div class="c-body">
-            <p style="text-align: center;">
-                Контактная информация, ерип и т.д.
-            </p>
-        </div>
-    </div>
     <footer class="footer">
         <div class="footer-body">
-            <p>
-                footer
-            </p>
+            <div class="footer-item">
+                <p class="footer-text">ИП Захаревская Юлия Станиславовна</p>
+                <p class="footer-text">УНП: 591952292</p>
+                <p class="footer-text">Свидетельство от 20 октября 2021 года</p>
+                <p class="footer-text">Выдано администрацией Октябрьского района г. Гродно</p>
+            </div>
+            <div class="footer-item2"></div>
         </div>
     </footer>
 </div>
@@ -375,4 +376,4 @@
         })
 </script>
 </body>
-</html>
+</html> 
