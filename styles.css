@@ -1157,6 +1157,10 @@ html, body {
     display: none;
 }
 
+.nested-list {
+    text-align: start;
+}
+
 .one-product.active-text .question-text {
     display: block;
 }
