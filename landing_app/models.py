@@ -1,5 +1,8 @@
 from django.db import models
 
+from .compression import compress_product_image
+from landing import settings
+
 
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='категория')
@@ -13,6 +16,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    TIME_TO_COMPRESS = 60
+    PHOTO_CUALITY = 30
+
     name = models.CharField(max_length=100, verbose_name='название изделия')
     description = models.TextField(verbose_name='описание')
     price = models.FloatField(verbose_name='цена')
@@ -27,3 +33,11 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'изделие'
         verbose_name_plural = 'изделия'
+
+    def save(self, *args, **kwargs):
+        super(Product, self).save(*args, **kwargs)
+        compress_product_image(
+            directory=settings.MEDIA_ROOT,
+            required_quality=self.PHOTO_CUALITY,
+            time_to_compress=self.TIME_TO_COMPRESS
+        )
