@@ -1,1 +1,1 @@
-##[Deploy](https://dmband.github.io/landing/)
+## [Deploy](https://dmband.github.io/landing/)
