@@ -140,7 +140,15 @@
                         <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
                         <p class="product-name">{{c.name}}</p>
                         <p class="product-description">{{c.description}}</p>
-                        <p class="product-price">{{c.price|floatformat:2}} BYN</p>
+                        {% if c.price %}
+                            <p class="product-price">{{c.price|floatformat:2}} BYN</p>
+                        {% endif %}
+                        {% if c.price_per_kg %}
+                            <p class="product-price">{{c.price_per_kg|floatformat:2}} BYN</p>
+                        {% endif %}
+                        {% if c.price_per_100g %}
+                            <p class="product-price">{{c.price_per_100g|floatformat:2}} BYN</p>
+                        {% endif %}
                     </div>
                     {% endif %}
                 {% endfor %}
@@ -152,23 +160,43 @@
                         <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
                         <p class="product-name">{{m.name}}</p>
                         <p class="product-description">{{m.description}}</p>
-                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                        {% if m.price %}
+                            <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                        {% endif %}
+                        {% if m.price_per_kg %}
+                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN</p>
+                        {% endif %}
+                        {% if m.price_per_100g %}
+                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN</p>
+                        {% endif %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <div class="one-product-container-marmalade">
+            <div class="one-product-container-marmalade">                
                 {% for m in marmalade %}
                     {% if m.is_published %}
                     <div class="one-product">
                         <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
                         <p class="product-name">{{m.name}}</p>
                         <p class="product-description">{{m.description}}</p>
-                        <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                        {% if m.price %}
+                            <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                        {% endif %}
+                        {% if m.price_per_kg %}
+                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN / 1 кг</p>
+                        {% endif %}
+                        {% if m.price_per_100g %}
+                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN / 100 гр</p>
+                        {% endif %}
                     </div>
                     {% endif %}
-                {% endfor %}
+                {% endfor %}                   
             </div>
+            <div class="warning-block">
+                <p class="warning">Наличие товара уточняйте у менеджера</p> 
+                <p class="warning">Работаем по предзаказу</p>   
+            </div>         
         </div>
     </section>
     <section class="fullscreen2 f-bg2">
@@ -236,7 +264,7 @@
                                         </li>
                                         <li class="nested-step">
                                             &nbsp;&nbsp;&nbsp;&#9675;&nbsp;&nbsp;&nbsp;Написать нам в
-                                            <a href="#" class="delivery-span" style="text-decoration: underline">
+                                            <a href="https://www.instagram.com/osobyj_sluchaj_grodno/" class="delivery-span" style="text-decoration: underline" target="_blank">
                                                 Instagram
                                             </a>
                                         </li>
@@ -291,8 +319,8 @@
                     <h3 class="question-title">У вас есть доставка в другие города Беларуси?</h3>
                     <div class="question-text">Да, подарочные наборы отправляются Белпочтой исключительно с пометкой
                         <span class="delivery-span">«Хрупко»</span>. Отправка осуществляется <span
-                                class="delivery-span">после 100% предоплаты заказа + стоимость доставки. Срок доставки в другие города:</span>
-                        1-3 дня с момента отправки
+                                class="delivery-span">после 100% предоплаты заказа + стоимость доставки.</span> Срок доставки в другие города:
+                        <span class="delivery-span">1-3 дня с момента отправки</span>
                     </div>
                 </div>
                 <div class="one-question">
@@ -356,7 +384,20 @@
                 <p class="footer-text">Свидетельство от 20 октября 2021 года</p>
                 <p class="footer-text">Выдано администрацией Октябрьского района г. Гродно</p>
             </div>
-            <div class="footer-item2"></div>
+            <div class="footer-img">
+                <div class="footer-item2"></div>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/osobyj_sluchaj_grodno/" class="footer-link" target="_blank">
+                        <div class="inst-f"></div>
+                    </a>
+                    <a href="mailto:osobyjsluchaj@gmail" class="footer-link">
+                        <div class="mail-f"></div>
+                    </a>
+                    <a href="tel:+375445536540" class="footer-link">
+                        <div class="phone-f"></div>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </div>
