@@ -816,6 +816,17 @@ html, body {
     color: #2e2c2a;
 }
 
+.warning-block {
+    margin-top: 20px;
+}
+
+.warning {
+    color: #3e7e4c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 @media (max-width: 1024px) {
     .title {
         font-size: 20px;
@@ -934,6 +945,10 @@ html, body {
     .product-price {
         font-size: 15px;
         margin: 10px 0 0;
+    }
+
+    .warning {
+        font-size: 10px;
     }
 }
 /* _______DELIVERY____*/
