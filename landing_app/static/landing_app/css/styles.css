@@ -777,6 +777,10 @@ html, body {
     width: 350px;
     margin: 10px 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-img {
@@ -808,7 +812,7 @@ html, body {
 }
 
 .product-price {
-    margin: 15px 0;
+    margin: 10px 0;
     color: #2e2c2a;
 }
 
@@ -1455,3 +1459,8 @@ textarea.form-input {
 }
 
 /* END FOOTER */
+
+
+.dima {
+    display: none;
+}

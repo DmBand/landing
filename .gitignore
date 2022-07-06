@@ -155,3 +155,5 @@ phpmailer/
 /phpmailer/
 media/
 secret.py
+
+development_files/
