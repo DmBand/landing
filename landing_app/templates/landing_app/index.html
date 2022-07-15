@@ -133,25 +133,58 @@
                 <button class="catalog-btn" data-product="marshmallow">Зефир</button>
                 <button class="catalog-btn" data-product="marmalade">Мармелад</button>
             </div>
-            <div class="one-product-container-chocolate active-product">
-                {% for c in chockolate %}
-                    {% if c.is_published %}
-                    <div class="one-product">
-                        <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
-                        <p class="product-name">{{c.name}}</p>
-                        <p class="product-description">{{c.description}}</p>
-                        {% if c.price %}
-                            <p class="product-price">{{c.price|floatformat:2}} BYN</p>
-                        {% endif %}
-                        {% if c.price_per_kg %}
-                            <p class="product-price">{{c.price_per_kg|floatformat:2}} BYN</p>
-                        {% endif %}
-                        {% if c.price_per_100g %}
-                            <p class="product-price">{{c.price_per_100g|floatformat:2}} BYN</p>
-                        {% endif %}
+            <div class="cat-item">
+                <div class="consist-container">
+                    <div class="consist-items">
+                        <div class="one-cons-item">
+                            <h3 class="cons-title">RUBY шоколад CALLEBAUT</h3>
+                            <p class="cons-description">
+                                Состав: сахар, масло, какао, сухое цельное молоко, тертое какао, эмульгатор: соевый лецитин, регулятор кислотности: лимонная кислота, ваниль натуральная
+                            </p>
+                        </div>
+                        <div class="one-cons-item">
+                            <h3 class="cons-title">Молочный шоколад CALLEBAUT</h3>
+                            <p class="cons-description">
+                                Состав: сахар, масло, какао, сухое цельное молоко, тертое какао, эмульгатор: соевый лецитин, натуральный аромотизатор, ванилин
+                            </p>
+                        </div>
+                        <div class="one-cons-item">
+                            <h3 class="cons-title">Белый шоколад CALLEBAUT</h3>
+                            <p class="cons-description">
+                                Состав: сухое цельное молоко, сахар, ваниль, натуральный аромотизатор, соевый лецитин, масло, какао
+                            </p>
+                        </div>
+                        <div class="one-cons-item">
+                            <h3 class="cons-title">Темный шоколад CALLEBAUT</h3>
+                            <p class="cons-description">
+                                Состав: сахар, масло, какао, сухое цельное молоко, тертое какао, эмульгатор: лецитин, натуральный аромотизатор, ванилин
+                            </p>
+                        </div>
                     </div>
-                    {% endif %}
-                {% endfor %}
+                    <p class="cons-info">
+                        Не содержит химические добавки, пальмовое масло, красители, усилители вкуса
+                    </p>
+                </div>
+                <div class="one-product-container-chocolate active-product">
+                    {% for c in chockolate %}
+                        {% if c.is_published %}                    
+                        <div class="one-product">
+                            <img src="{{c.image.url}}" alt="продукт {{ c.pk }}" class="product-img">
+                            <p class="product-name">{{c.name}}</p>
+                            <p class="product-description">{{c.description}}</p>
+                            {% if c.price %}
+                                <p class="product-price">{{c.price|floatformat:2}} BYN</p>
+                            {% endif %}
+                            {% if c.price_per_kg %}
+                                <p class="product-price">{{c.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
+                            {% endif %}
+                            {% if c.price_per_100g %}
+                                <p class="product-price">{{c.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
             <div class="one-product-container-marshmallow">
                 {% for m in marshmallow %}
@@ -164,10 +197,10 @@
                             <p class="product-price">{{m.price|floatformat:2}} BYN</p>
                         {% endif %}
                         {% if m.price_per_kg %}
-                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN</p>
+                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
                         {% endif %}
                         {% if m.price_per_100g %}
-                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN</p>
+                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
                         {% endif %}
                     </div>
                     {% endif %}
@@ -184,17 +217,17 @@
                             <p class="product-price">{{m.price|floatformat:2}} BYN</p>
                         {% endif %}
                         {% if m.price_per_kg %}
-                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN / 1 кг</p>
+                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
                         {% endif %}
                         {% if m.price_per_100g %}
-                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN / 100 гр</p>
+                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
                         {% endif %}
                     </div>
                     {% endif %}
                 {% endfor %}                   
             </div>
             <div class="warning-block">
-                <p class="warning">Наличие товара уточняйте у менеджера</p> 
+                <p class="warning">Наличие товара уточняйте у менеджера.</p> 
                 <p class="warning">Работаем по предзаказу</p>   
             </div>         
         </div>
@@ -403,6 +436,7 @@
 </div>
 <script type="module" src="{% static 'landing_app/js/burger.js' %}"></script>
 <script type="module" src="{% static 'landing_app/js/catalog.js' %}"></script>
+<script type="module" src="{% static 'landing_app/js/block.js' %}"></script>
 <script type="module" src="{% static 'landing_app/js/questions.js' %}"></script>
 <script type="module" src="{% static 'landing_app/js/main.js' %}"></script>
 <script type="module" src="{% static 'landing_app/js/form.js' %}"></script>

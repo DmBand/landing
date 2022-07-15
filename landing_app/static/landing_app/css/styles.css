@@ -53,6 +53,12 @@ html, body {
 }
 
 @font-face {
+    font-family: "Montserrat-Italic";
+    src: url("../fonts/Montserrat/static/Montserrat-Italic.ttf");
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'Pacifico';
     src: url("../fonts/Pacifico-Regular.ttf");
 }
@@ -757,6 +763,46 @@ html, body {
     height: 50px;
 }
 
+/* ____________________________________________ */
+
+
+.consist-container {    
+    margin-top: 20px;
+}
+
+.consist-items {
+    display: flex;
+}
+
+.one-cons-item {
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+.cons-title {
+    color: #492e0ad3;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.cons-description {
+    color: #492e0a;
+    font-family: 'Montserrat-Italic';
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.cons-info {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #492e0ad3;
+}
+
+/* ____________________________________________ */
+
 .one-product-container-chocolate,
 .one-product-container-marshmallow,
 .one-product-container-marmalade {
@@ -772,7 +818,6 @@ html, body {
 .active-product {
     display: flex;
 }
-
 .one-product {
     width: 350px;
     margin: 10px 0px;
@@ -804,8 +849,11 @@ html, body {
 }
 
 .product-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
-    min-height: 55px;
+    min-height: auto;
     padding: 0px 10px;
     font-size: 14px;
     color: #504d4d;
@@ -814,6 +862,11 @@ html, body {
 .product-price {
     margin: 10px 0;
     color: #2e2c2a;
+    font-weight: 700;
+}
+
+.cp {
+    font-weight:    00;
 }
 
 .warning-block {
@@ -821,7 +874,7 @@ html, body {
 }
 
 .warning {
-    color: #3e7e4c;
+    color: #492e0ad3;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
@@ -889,10 +942,6 @@ html, body {
     }
 
     .product-name {
-        min-height: auto;
-    }
-
-    .product-description {
         min-height: auto;
     }
 
@@ -1437,7 +1486,7 @@ textarea.form-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .footer-item2 {

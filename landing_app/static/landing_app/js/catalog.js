@@ -2,7 +2,6 @@
 
 const catalogBtn = document.querySelectorAll('.catalog-btn');
 const catalogButtons = document.querySelector('.catalog-buttons');
-// const catalog = document.querySelector('.catalog');
 
 function activeBtn(event) {       
     if (event.target.tagName == 'BUTTON') {
