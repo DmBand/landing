@@ -10,9 +10,10 @@ function activeBtn(event) {
         event.target.classList.add('btn-active');
         const currentDiv = document.querySelector('.active-product');
         currentDiv.classList.remove('active-product');
-        const div = document.querySelector(`.one-product-container-${product}`);
+        const div = document.querySelector(`.cat-item-${product}`);        
         div.classList.add('active-product')
     }   
 }
 
 catalogButtons.addEventListener('click', activeBtn)
+ 
