@@ -57,8 +57,10 @@ const myObs = new ResizeObserver(entries => {
 })
 
 function onLoad() {
-    const defaultDiv = document.getElementById(product);
-    myObs.observe(defaultDiv); 
+    if (window.screen.availWidth > 660) {
+        const defaultDiv = document.getElementById(product);
+        myObs.observe(defaultDiv); 
+    }
 }
 
 function changeHeight(event) {
