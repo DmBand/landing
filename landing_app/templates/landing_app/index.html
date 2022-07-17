@@ -133,7 +133,7 @@
                 <button class="catalog-btn" data-product="marshmallow">Зефир</button>
                 <button class="catalog-btn" data-product="marmalade">Мармелад</button>
             </div>
-            <div class="cat-item">
+            <div class="cat-item-chocolate active-product">
                 <div class="consist-container">
                     <div class="consist-items">
                         <div class="one-cons-item">
@@ -165,7 +165,7 @@
                         Не содержит химические добавки, пальмовое масло, красители, усилители вкуса
                     </p>
                 </div>
-                <div class="one-product-container-chocolate active-product">
+                <div class="one-product-container" id="chocolate">
                     {% for c in chockolate %}
                         {% if c.is_published %}                    
                         <div class="one-product">
@@ -186,45 +186,51 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="one-product-container-marshmallow">
-                {% for m in marshmallow %}
-                    {% if m.is_published %}
-                    <div class="one-product">
-                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                        <p class="product-name">{{m.name}}</p>
-                        <p class="product-description">{{m.description}}</p>
-                        {% if m.price %}
-                            <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+            <div class="cat-item-marshmallow">
+                <div class="consist-container"></div>
+                <div class="one-product-container" id="marshmallow">
+                    {% for m in marshmallow %}
+                        {% if m.is_published %}
+                        <div class="one-product">
+                            <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                            <p class="product-name">{{m.name}}</p>
+                            <p class="product-description">{{m.description}}</p>
+                            {% if m.price %}
+                                <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                            {% endif %}
+                            {% if m.price_per_kg %}
+                                <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
+                            {% endif %}
+                            {% if m.price_per_100g %}
+                                <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
+                            {% endif %}
+                        </div>
                         {% endif %}
-                        {% if m.price_per_kg %}
-                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
-                        {% endif %}
-                        {% if m.price_per_100g %}
-                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-            <div class="one-product-container-marmalade">                
-                {% for m in marmalade %}
-                    {% if m.is_published %}
-                    <div class="one-product">
-                        <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
-                        <p class="product-name">{{m.name}}</p>
-                        <p class="product-description">{{m.description}}</p>
-                        {% if m.price %}
-                            <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+            <div class="cat-item-marmalade">
+                <div class="consist-container"></div>
+                <div class="one-product-container" id="marmalade">                
+                    {% for m in marmalade %}
+                        {% if m.is_published %}
+                        <div class="one-product">
+                            <img src="{{m.image.url}}" alt="продукт {{ m.pk }}" class="product-img">
+                            <p class="product-name">{{m.name}}</p>
+                            <p class="product-description">{{m.description}}</p>
+                            {% if m.price %}
+                                <p class="product-price">{{m.price|floatformat:2}} BYN</p>
+                            {% endif %}
+                            {% if m.price_per_kg %}
+                                <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
+                            {% endif %}
+                            {% if m.price_per_100g %}
+                                <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
+                            {% endif %}
+                        </div>
                         {% endif %}
-                        {% if m.price_per_kg %}
-                            <p class="product-price">{{m.price_per_kg|floatformat:2}} BYN <span class="cp">/ 1 кг</span></p>
-                        {% endif %}
-                        {% if m.price_per_100g %}
-                            <p class="product-price">{{m.price_per_100g|floatformat:2}} BYN <span class="cp">/ 100 гр</span></p>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                {% endfor %}                   
+                    {% endfor %}                   
+                </div>
             </div>
             <div class="warning-block">
                 <p class="warning">Наличие товара уточняйте у менеджера.</p> 
