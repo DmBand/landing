@@ -790,6 +790,10 @@ html, body {
 }
 
 .cons-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
     color: #492e0ad3;
     font-weight: 700;
     font-size: 17px;
@@ -804,10 +808,44 @@ html, body {
 }
 
 .cons-info {
+    margin-top: 10px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
     color: #492e0ad3;
+}
+
+@media (max-width: 880px) {
+    .cons-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consist-items {
+        overflow: scroll;
+    }
+
+    .one-cons-item {
+        width: 100%;
+    }
+
+    .cons-description {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cons-info {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .cons-description {
+        width: 200px;
+    }
 }
 
 /* ____________________________________________ */
