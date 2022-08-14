@@ -1,2 +1,2 @@
 В разработке.
-## [Deploy](https://dmband.github.io/landing/)
+## [Test Deploy](https://land1ng.herokuapp.com/)
